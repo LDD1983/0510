@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1{
+            background-color: antiquewhite;
+            opacity: 0.6;
+            text-align: center;
+        }
+        .con{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-around;
+            /* background-color: blue; */
+            /* height: 300px; */
+            margin-bottom: 30px;
+
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            margin-bottom: 20px;
+
+        }
+        .con>.b2{
+            background-color: lightpink;
+        }
+        /* body {
+            background-color: lightgreen;
+        } */
+        /* .c3>label,.c3>input{
+            margin: 10px auto;
+        } */
+        @media only screen and (max-width: 600px) {
+            /* body {
+                background-color: lightblue;
+                
+            } */
+            .con{
+                flex-wrap: wrap;
+                
+            }
+            body>.c1{
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-items: center;
+            }
+            body>.c2{
+                width: 50% ;
+                /* height: 50%; */
+                margin: 10px auto;
+            }
+            body>.c3{
+                width: 20% ;
+                /* height: 50%; */
+                margin: 50px auto;
+                justify-content: center;
+            }
+            form{
+                text-align: center;
+            }
+            form>input{
+            margin-bottom: 10px;           
+            }
+            /* form>label{
+            margin: 0 auto;    
+            } */
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        Media Query
+    </h1>
+    <div class="con c1">
+        <div class="box b1"> 
+       </div>
+        <div class="box b1"> 
+       </div>
+        <div class="box b1"> 
+       </div>
+    </div>
+    <div class="con c2">
+        <div class="box b2"> 
+       </div>
+        <div class="box b2"> 
+       </div>
+        <div class="box b2"> 
+       </div>
+        <div class="box b2"> 
+       </div>
+    </div>
+    <div class="con c3">
+        <form action=""> 
+            <label for="">name</label>
+            <input type="text" name="" id="">
+            <label for="">電</label>
+            <input type="text" name="" id="">
+
+
+        </form>
+    </div>
+
+   
+</body>
+
+</html>

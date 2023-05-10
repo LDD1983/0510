@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <label for="">name :</label>
+        <input type="text" name="" id="name" >
+    </p>
+    <p>
+        <label for="">mabile :</label>
+        <input type="text" name="" id="mobile" >
+    </p>
+    <p>
+        <button type="button" id="btn" onclick="myFun()">選號</button>
+    </p>
+    <hr>
+    <p>
+        輸入資料
+    </p>    
+    <p id="res">
+        結果是........
+    </p>
+
+
+
+    <script>
+
+        // set value
+        //  let nameText = document.getElementById('name').value = 'bob';
+        //  let mobileText = document.getElementById('mobile').value = '123456';
+
+        // get
+
+        // 綁定 ID
+        // let nameText = document.getElementById('name');
+        // let mobileText = document.getElementById('mobile');
+        let btn = document.getElementById('btn');
+
+        let res = document.getElementById('res');
+        
+
+         
+         
+         
+
+         
+
+
+        // 宣告 myFun
+        function myFun() {
+            let nameText = document.getElementById('name').value;
+            let mobileText = document.getElementById('mobile').value;
+            // console.log(nameText);
+            // console.log(mobileText);
+           res.innerText = `您輸入的是 name : ${nameText} mobile : ${mobileText}` ;  
+           btn.innerText = `nice try`;  
+         
+          
+
+           document.getElementById('name').value = null;    
+           document.getElementById('mobile').value = null;    
+        }
+
+        // function 宣告 用印章當範例
+
+        function stamp(month , date){
+            console.log(month);
+            console.log(date);
+        }
+        // 呼叫 function
+
+        stamp(5,10);
+        stamp(12,31);
+
+        //  document.getElementById('res').innerText = `${nameText} + ${mobileText}` ;
+
+    </script>
+</body>
+</html>
